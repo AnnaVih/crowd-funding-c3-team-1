@@ -28,6 +28,30 @@ const dummyData = [
     name: "Hanna V",
     description: "One of the top investors"
   },
+  {
+    id: "5",
+    img: 'images/investor.jpeg',
+    name: "Adam Smith",
+    description: "One of the top investors"
+  },
+  {
+    id: "6",
+    img: 'images/investor-2.jpeg',
+    name: "Jane Do",
+    description: "One of the top investors"
+  },
+  {
+    id: "7",
+    img: 'images/investor.jpeg',
+    name: "Mike Black",
+    description: "One of the top investors"
+  },
+  {
+    id: "8",
+    img: 'images/investor-2.jpeg',
+    name: "Hanna V",
+    description: "One of the top investors"
+  },
 ]
 
 const TopInvestors = () => (
