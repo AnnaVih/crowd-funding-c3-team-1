@@ -28,6 +28,15 @@ export const StyledDetails = styled.div`
   }
 `
 
+export const MapImageWrapper = styled.div`
+  height: 300px;
+  margin: 40px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`
+
 export const StyledExploreList = styled.div`
   display: flex;
   flex-wrap: wrap;

@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
 export const LogoWrapper = styled.div`
-  width: 100%;
-  height: 60px;
+  max-width: 400px;
+  height: 120px;
   text-align: center;
   font-size: 40px;
   line-height: 60px;
-  margin: 50px;
+  margin: 30px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `
 
 export const PrimaryWord = styled.span`

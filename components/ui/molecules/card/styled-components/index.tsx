@@ -17,7 +17,7 @@ export const StyledCardHeader = styled.div`
 
 export const StyledCardBody = styled.div`
   padding: 10px;
-  color: #C7C4C2;
+  color: #20b4e2;
   font-weight: 300;
   p {
     color: #000;
