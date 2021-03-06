@@ -2,9 +2,9 @@ import styled from "styled-components"
 import { ButtonType } from "../types"
 
 export const StyledButton = styled.div<{type: ButtonType}>`
-  width: 250px;
+  width: 300px;
   height: 68px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   color: #000;
   background-color: ${({type}) => type === "secondary" ? "#C4C4C4" : "#fff"};
   font-size: 30px;

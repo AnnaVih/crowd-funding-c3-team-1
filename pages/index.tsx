@@ -1,13 +1,14 @@
 import React from 'react'
 import { Button } from '../components/ui/atoms/button'
-import { ActionButtons } from './styled-components'
+import { Centered } from './styled-components'
 
 const Home =() => {
   return (
-    <ActionButtons>
+    <Centered>
       <Button  type="primary" linkTo="/auth/login" name="Login"/>
-      <Button  type="secondary" linkTo="/auth/signup" name="Get Started"/>
-    </ActionButtons>
+      <Button  type="primary" linkTo="/auth/signup" name="Register"/>
+      <Button  type="secondary" linkTo="/explore" name="Explore"/>
+    </Centered>
   )
 }
 

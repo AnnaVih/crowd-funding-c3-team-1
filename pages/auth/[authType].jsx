@@ -1,32 +1,20 @@
 import { useRouter } from 'next/router'
-
 import {LoginForm} from "../../components/ui/molecules/login-form"
 import {SignUpForm} from "../../components/ui/molecules/signup-form"
-
+import {Centered} from '../styled-components'
 
 const Authorization = (props) => {
   const router = useRouter()
   const {authType} = router.query
 
-  const signInHandler = () => {
-    console.log('signedIn')
-  }
-
-  const signUpHandler = () => {
-    console.log('signedIn')
-  }
   return (
-  <>
+  <Centered>
     {
       authType === "login" ? 
-      <LoginForm>
-
-      </LoginForm> 
-      : <SignUpForm>
-
-      </SignUpForm>
+      <LoginForm/>
+      : <SignUpForm/>
     }
-  </>
+  </Centered>
   )
 }
 

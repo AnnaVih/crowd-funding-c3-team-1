@@ -3,12 +3,10 @@ import '../styles/globals.css'
 import { FlexBox } from './styled-components'
 
 function MyApp({ Component, pageProps }) {
-  return <>
-    <FlexBox style={{height: "100%"}}>
+  return <FlexBox>
       <Logo />
-      <Component {...pageProps} />
-    </FlexBox>
-  </>
+      <Component {...pageProps}/>
+  </FlexBox>
 }
 
 export default MyApp
