@@ -8,8 +8,9 @@ export const StyledDetails = styled.div`
   }
 `
 
-export const StyledExplore = styled.div`
+export const StyledExploreList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 100px;
 `

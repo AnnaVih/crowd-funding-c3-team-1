@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export const StyledCard = styled.div`
   width: 300px;
-  box-shadow: 2px 5px 5px gray; 
+  box-shadow: 1px 2px 2px #C7C4C2; 
   margin: 20px;
+  background: #fff;
 `
 
 export const StyledCardHeader = styled.div`

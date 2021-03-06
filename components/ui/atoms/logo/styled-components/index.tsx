@@ -17,5 +17,5 @@ export const PrimaryWord = styled.span`
 
 export const SecondaryWord = styled.span`
   color: #C4C4C4;
-  font-weight: 200;
+  font-weight: 300;
 `

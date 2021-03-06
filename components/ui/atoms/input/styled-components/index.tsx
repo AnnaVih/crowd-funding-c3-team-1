@@ -10,6 +10,7 @@ export const StyledInputWrapper = styled.div`
 export const StyledInput = styled.input`
   height: 70px;
   border-radius: 40px;
+  border: 1px solid #b5b1b1;
   margin: 7px;
   padding: 20px;
 `
