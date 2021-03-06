@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../components/ui/atoms/button'
-import { Centered } from './styled-components'
+import { Centered } from '../styles/styled-components'
 
 const Home =() => {
   return (

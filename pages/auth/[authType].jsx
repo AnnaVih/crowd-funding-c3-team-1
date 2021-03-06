@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import {LoginForm} from "../../components/ui/molecules/login-form"
 import {SignUpForm} from "../../components/ui/molecules/signup-form"
-import {Centered} from '../styled-components'
+import {Centered} from '../../styles/styled-components'
 
 const Authorization = (props) => {
   const router = useRouter()
