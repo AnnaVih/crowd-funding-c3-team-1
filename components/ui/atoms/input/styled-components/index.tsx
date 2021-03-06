@@ -11,4 +11,10 @@ export const StyledInput = styled.input`
   height: 70px;
   border-radius: 40px;
   margin: 7px;
+  padding: 20px;
+`
+
+
+export const StyledLabel = styled.label`
+  margin-left: 20px;
 `

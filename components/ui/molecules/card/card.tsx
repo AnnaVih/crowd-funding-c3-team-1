@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { StyledCardHeader } from "./styled-components"
+import { StyledCardHeader, StyledCard, StyledCardBody } from "./styled-components"
 
 export const Card = ({
   title,
@@ -13,16 +13,18 @@ export const Card = ({
   linkTo: string
 }) => {
   return (
-    <Link href={linkTo}>
-      <a>
-        <StyledCardHeader>
-          <img src={imagePath} alt={title}/>
-        </StyledCardHeader>
-        <div>
-          <h1>{title}</h1>
-          <div><p>{description}</p></div>
-        </div>
-      </a>
-    </Link>
+    <StyledCard>
+      <Link href={linkTo}>
+        <a>
+          <StyledCardHeader>
+            <img src={imagePath} alt={title}/>
+          </StyledCardHeader>
+          <StyledCardBody>
+            <h2>{title}</h2>
+            <div><p>{description}</p></div>
+          </StyledCardBody>
+        </a>
+      </Link>
+    </StyledCard>
   )
 }

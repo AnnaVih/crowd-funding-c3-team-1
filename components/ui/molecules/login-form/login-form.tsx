@@ -9,8 +9,8 @@ export const LoginForm = (props) => {
   return (
     <StyledFrom>
       <InputsWrapper>
-        <Input type="email" id="email" name="email" label="Email"/>
-        <Input type="string" id="password" name="password" label="Password"/>
+        <Input type="email" placeholder="Type your email" name="email" label="Email"/>
+        <Input type="string" placeholder="Type your password" name="password" label="Password"/>
       </InputsWrapper>
       <Button onClick={signInHandler} type="secondary"  name="Login"/>
     </StyledFrom>

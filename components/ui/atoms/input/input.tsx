@@ -1,20 +1,20 @@
-import { StyledInput, StyledInputWrapper } from "./styled-components"
+import { StyledInput, StyledInputWrapper, StyledLabel } from "./styled-components"
 
 export const Input = ({
-  id,
   type,
   name,
-  label
+  label,
+  placeholder
 }: {
-  id: string
   type: string
   name: string
   label: string
+  placeholder: string
 }) => {
   return (
     <StyledInputWrapper>
-      <label htmlFor={id}>{label}</label>
-      <StyledInput type={type} id={id} name={name}/>
+      <StyledLabel htmlFor={name}>{label}</StyledLabel>
+      <StyledInput placeholder={placeholder} type={type} id={name} name={name}/>
     </StyledInputWrapper>
   )
 }
