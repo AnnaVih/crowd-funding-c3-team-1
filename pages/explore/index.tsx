@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from '../../components/ui/molecules/card'
 import { StyledExploreList } from "../../styles/styled-components"
 import { FooterNavigation } from '../../components/ui/molecules/footer-navigation'
+import { FilterListNav } from '../../components/ui/molecules/filter-list-nav'
 
 export const dummyData = [
   {
@@ -12,26 +13,29 @@ export const dummyData = [
     days: 20,
     total: 600,
     leftToInvest: 100,
-    type: "Crowdfunding"
+    type: "Crowdfunding",
+    isFavorite: false
   },
   {
     id: "obtaining-financing",
     img: 'images/finance.jpg',
     description: "Obtaining Financing description test",
-    days: 20,
+    days: 11,
     total: 600,
     leftToInvest: 100,
     title: "IT",
-    type: "Crowdfunding"
+    type: "Crowdfunding",
+    isFavorite: false
   },
   {
     id: "obtaining-financing-two",
     img: 'images/test.jpeg',
-    days: 10,
+    days: 16,
     total: 800,
     leftToInvest: 200,
     title: 'Financing',
-    type: "Financing"
+    type: "Financing",
+    isFavorite: true
   },
   {
     id: "glossary",
@@ -40,7 +44,8 @@ export const dummyData = [
     days: 4,
     total: 1000,
     leftToInvest: 500,
-    type: "Media"
+    type: "Media",
+    isFavorite: false
   },
   {
     id:"networking",
@@ -49,15 +54,30 @@ export const dummyData = [
     days: 22,
     total: 22000,
     leftToInvest: 1100,
-    type: "Networking"
+    type: "Networking",
+    isFavorite: true
   }
 ]
 
 const Explore = () => {
+  const [list, setList] = React.useState(dummyData)
+  const [listType, setListType] = React.useState("all")
+
+  const onClickHandler = (filterBy: string) => {
+    if(filterBy === "all"){
+      setList(dummyData)
+    } else {
+      const filteredList = list.filter(item => item.isFavorite)
+      setList(filteredList)
+    }
+    setListType(filterBy)
+  }
+  
   return (
     <>
+      <FilterListNav listType={listType} onClick={onClickHandler}/>
       <StyledExploreList>
-        {dummyData.map(({id, title, days, total, type, img, leftToInvest}) => {
+        {list.map(({id, title, days, total, type, img, leftToInvest}) => {
           return <Card days={days} total={total} type={type} leftToInvest={leftToInvest} linkTo={`/explore/${id}`} title={title} key={id} imagePath={img}/>
         })}
       </StyledExploreList>

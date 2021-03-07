@@ -15,15 +15,7 @@ export const StyledButton = styled.div<{type: ButtonType, isRounded: boolean, si
   border-radius:  ${({isRounded}) => isRounded ? "40px" : "none"};
   border: ${({type}) => type === "primary" ? "1px solid #800080" : "none"};
   cursor: pointer;
-  button {
-    border:none;
-    background: none;
-    font-size: inherit;
-    cursor: pointer;
-    outline: none;
-    width: 100%;
-    height: 100%;
-  }
+
   &.active {
     background-color: #800080;
     button {

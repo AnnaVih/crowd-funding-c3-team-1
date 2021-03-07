@@ -14,7 +14,7 @@ export const Button = ({
   name: string
   onClick?: () => void
   linkTo?: string
-  type?: ButtonType
+  type: ButtonType
   isRounded?: boolean
   className?: string
   size?: string
