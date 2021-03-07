@@ -12,7 +12,7 @@ export const LoginForm = (props) => {
         <Input type="email" placeholder="Type your email" name="email" label="Email"/>
         <Input type="string" placeholder="Type your password" name="password" label="Password"/>
       </InputsWrapper>
-      <Button onClick={signInHandler} type="secondary"  name="Login"/>
+      <Button linkTo="/explore" type="secondary"  name="Login"/>
     </StyledFrom>
   )
 }

@@ -13,8 +13,9 @@ export const StyledInput = styled.input`
   border: 1px solid #b5b1b1;
   margin: 7px;
   padding: 20px;
+  font-size: 18px;
+  background: inherit;
 `
-
 
 export const StyledLabel = styled.label`
   margin-left: 20px;

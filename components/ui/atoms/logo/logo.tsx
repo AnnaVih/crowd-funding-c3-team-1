@@ -4,7 +4,7 @@ import { LogoWrapper, PrimaryWord, SecondaryWord } from "./styled-components";
 export const Logo = () => (
   <Link href="/">
     <LogoWrapper>
-      <PrimaryWord>Crown</PrimaryWord><SecondaryWord>FundHer</SecondaryWord>
+      <img src="/images/logo.png" alt="crowd fund her logo"/>
     </LogoWrapper> 
  </Link>
 )

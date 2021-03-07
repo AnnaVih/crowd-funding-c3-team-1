@@ -20,6 +20,6 @@ export const StyledLi = styled.li`
   width: 25%;
   text-align: center;
   &.active {
-    color: #50BD4E;
+    color: #800080;
   }
 `
