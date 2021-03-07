@@ -4,7 +4,7 @@ export const StyledPerson = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 374px;
   box-shadow: 1px 2px 2px #C7C4C2; 
   margin: 20px;
   background: #fff;
