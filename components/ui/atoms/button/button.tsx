@@ -19,7 +19,7 @@ export const Button = ({
   className?: string
   size?: string
 }) => ( 
-  <StyledButton size={size} type={type} isRounded={isRounded} className={className}>{
+  <StyledButton size={size} type={type} isRounded={isRounded} className={className} name={name}>{
     linkTo ? <Link href={linkTo}>{name}</Link>
     : <button onClick={onClick}>{name}</button> }
   </StyledButton>
