@@ -10,7 +10,7 @@ export const LoginForm = (props) => {
     <StyledFrom>
       <InputsWrapper>
         <Input type="email" placeholder="Type your email" name="email" label="Email"/>
-        <Input type="string" placeholder="Type your password" name="password" label="Password"/>
+        <Input type="password" placeholder="Type your password" name="password" label="Password"/>
       </InputsWrapper>
       <Button linkTo="/explore" type="secondary"  name="Login"/>
     </StyledFrom>
