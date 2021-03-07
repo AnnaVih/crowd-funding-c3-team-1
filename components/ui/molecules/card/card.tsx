@@ -25,6 +25,7 @@ export const Card = ({
   const onInvestHandler = (type: string) => {
     setInvestType(type)
   }
+  
   return (
     <StyledCard>
       <StyledCardHeader>

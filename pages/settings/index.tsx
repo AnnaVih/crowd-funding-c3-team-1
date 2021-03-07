@@ -1,8 +1,13 @@
 import { FooterNavigation } from "../../components/ui/molecules/footer-navigation"
+import { ImageWrapper, SettingsImageWrapper } from "../../styles/styled-components"
+
 
 const Settings = () => (
   <>
-    <div>Settings Page</div>
+    <ImageWrapper>
+      <SettingsImageWrapper src="/images/in-development.png"/>
+      <p>UNDER DEVELOPMENT</p>
+    </ImageWrapper>
     <FooterNavigation />
   </>
 )
