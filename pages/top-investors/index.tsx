@@ -6,50 +6,50 @@ import { StyledExploreList } from "../../styles/styled-components"
 const dummyData = [
   {
     id: "1",
-    img: 'images/investor.jpeg',
-    name: "Adam Smith",
+    img: 'images/inv1.jpg',
+    name: "Eva Smith",
     description: "One of the top investors"
   },
   {
     id: "2",
-    img: 'images/investor-2.jpeg',
-    name: "Jane Do",
+    img: 'images/inv2.jpg',
+    name: "John Do",
     description: "One of the top investors"
   },
   {
     id: "3",
-    img: 'images/investor.jpeg',
-    name: "Mike Black",
+    img: 'images/inv3.jpg',
+    name: "Molly Ly",
     description: "One of the top investors"
   },
   {
     id: "4",
-    img: 'images/investor-2.jpeg',
-    name: "Hanna V",
+    img: 'images/inv4.jpg',
+    name: "Hanna Montana",
     description: "One of the top investors"
   },
   {
     id: "5",
-    img: 'images/investor.jpeg',
+    img: 'images/inv5.jpg',
     name: "Adam Smith",
     description: "One of the top investors"
   },
   {
     id: "6",
-    img: 'images/investor-2.jpeg',
-    name: "Jane Do",
+    img: 'images/inv6.jpg',
+    name: "Ivan Ivanov",
     description: "One of the top investors"
   },
   {
     id: "7",
-    img: 'images/investor.jpeg',
-    name: "Mike Black",
+    img: 'images/inv7.jpg',
+    name: "Mike Reez",
     description: "One of the top investors"
   },
   {
     id: "8",
-    img: 'images/investor-2.jpeg',
-    name: "Hanna V",
+    img: 'images/inv8.jpg',
+    name: "Amy V",
     description: "One of the top investors"
   },
 ]
