@@ -14,6 +14,7 @@ export const StyledCardHeader = styled.div`
   img {
     height: 100%;
     width: 100%;
+    border-bottom:1px solid #efebe9;
   }
 `
 
