@@ -44,5 +44,6 @@ export const FlexBox = styled.div`
 
 export const  StyledHeart = styled.div<{isFavourite: boolean}>`
   color:  ${({isFavourite}) => isFavourite ? "#800080" : "inherit"};
+  cursor: pointer;
 `
 

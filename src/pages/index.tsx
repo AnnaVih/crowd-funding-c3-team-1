@@ -3,14 +3,20 @@ import { Button } from '../ui/atoms/button'
 import { Logo } from '../ui/atoms/logo'
 import { Centered, FlexBox } from '../styles/styled-components'
 
-const Home =() => {
+const Home =({
+  isAuth
+}: {
+  isAuth: boolean
+}) => {
   return (
     <FlexBox>
       <Logo />
       <Centered>
-        <Button  type="primary" linkTo="/auth/login" name="Login"/>
-        <Button  type="primary" linkTo="/auth/signup" name="Register"/>
-        <Button  type="secondary" linkTo="/explore" name="Explore"/>
+        {!isAuth && <>
+          <Button  styleType="primary" linkTo="/auth/login" name="Login"/>
+          <Button  styleType="primary" linkTo="/auth/signup" name="Register"/>
+        </>}
+        <Button  styleType="secondary" linkTo="/explore" name="Explore"/>
       </Centered>
     </FlexBox>
   )

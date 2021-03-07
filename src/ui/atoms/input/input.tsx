@@ -4,17 +4,19 @@ export const Input = ({
   type,
   name,
   label,
-  placeholder
+  placeholder,
+  isRequired
 }: {
   type: string
   name: string
   label: string
   placeholder: string
+  isRequired?: boolean
 }) => {
   return (
     <StyledInputWrapper>
       <StyledLabel htmlFor={name}>{label}</StyledLabel>
-      <StyledInput placeholder={placeholder} type={type} id={name} name={name}/>
+      <StyledInput required={isRequired} placeholder={placeholder} type={type} id={name} name={name}/>
     </StyledInputWrapper>
   )
 }

@@ -1,18 +1,23 @@
+import { useRouter } from 'next/router'
 import { Button } from "../../atoms/button"
 import { Input } from "../../atoms/input"
 import { InputsWrapper, StyledFrom } from "./styled-components"
 
-export const LoginForm = (props) => {
-  const signInHandler = () => {
-    console.log('signedIn')
+export const LoginForm = ({isAuth, setIsAuth}) => {
+  const router = useRouter()
+
+  const signInHandler = (e) => {
+    e.preventDefault()
+    setIsAuth(true)
+    router.push("/explore")
   }
   return (
-    <StyledFrom>
+    <StyledFrom onSubmit={signInHandler}>
       <InputsWrapper>
-        <Input type="email" placeholder="Type your email" name="email" label="Email"/>
-        <Input type="password" placeholder="Type your password" name="password" label="Password"/>
+        <Input isRequired={true} type="email" placeholder="Type your email" name="email" label="Email"/>
+        <Input isRequired={true} type="password" placeholder="Type your password" name="password" label="Password"/>
       </InputsWrapper>
-      <Button linkTo="/explore" type="secondary"  name="Login"/>
+      <Button type="submit" onClick={() => null} styleType="secondary"  name="Login"/>
     </StyledFrom>
   )
 }

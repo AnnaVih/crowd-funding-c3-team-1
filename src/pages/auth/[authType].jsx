@@ -5,7 +5,7 @@ import {Centered, FlexBox} from "../../styles/styled-components"
 import {Logo} from "../../ui/atoms/logo"
 
 
-const Authorization = () => {
+const Authorization = (props) => {
   const router = useRouter()
   const {authType} = router.query
 
@@ -15,8 +15,8 @@ const Authorization = () => {
       <Centered>
         {
           authType === "login" ? 
-          <LoginForm/>
-          : <SignUpForm/>
+          <LoginForm {...props}/>
+          : <SignUpForm {...props}/>
         }
       </Centered>
     </FlexBox>

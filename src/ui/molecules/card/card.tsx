@@ -62,8 +62,8 @@ export const Card = ({
       <StyledCardFooter>
         <CardFooterTitle>Invest on this project</CardFooterTitle>
         <FlexBox>
-          <Button onClick={() => onInvestHandler("reward")} size="sm" className={investType === "reward" ? "active" : ""} isRounded={false} name="Reward" type="primary"/>
-          <Button onClick={() => onInvestHandler("equity")}  size="sm" className={investType === "equity" ? "active": ""} isRounded={false} name="Equity" type="primary"/>
+          <Button onClick={() => onInvestHandler("reward")} size="sm" className={investType === "reward" ? "active" : ""} isRounded={false} name="Reward" styleType="primary"/>
+          <Button onClick={() => onInvestHandler("equity")}  size="sm" className={investType === "equity" ? "active": ""} isRounded={false} name="Equity" styleType="primary"/>
         </FlexBox>
       </StyledCardFooter>
     </StyledCard>

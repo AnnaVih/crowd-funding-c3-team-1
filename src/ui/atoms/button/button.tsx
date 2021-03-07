@@ -4,23 +4,25 @@ import { ButtonType } from './types'
 
 export const Button = ({
   name,
-  onClick,
   linkTo,
-  type,
+  styleType,
   isRounded = true,
   className,
-  size
+  size,
+  onClick,
+  type
 }: {
   name: string
   onClick?: () => void
   linkTo?: string
-  type: ButtonType
+  styleType: ButtonType
   isRounded?: boolean
   className?: string
   size?: string
+  type?:  "button" | "submit" | "reset"
 }) => ( 
-  <StyledButton size={size} type={type} isRounded={isRounded} className={className} name={name}>{
+  <StyledButton size={size} styleType={styleType} isRounded={isRounded} className={className} name={name}>{
     linkTo ? <Link href={linkTo}>{name}</Link>
-    : <button onClick={onClick}>{name}</button> }
+    : <button type={type} onClick={onClick}>{name}</button> }
   </StyledButton>
  )

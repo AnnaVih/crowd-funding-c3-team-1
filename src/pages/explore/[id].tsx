@@ -53,8 +53,8 @@ const ProjectDetails = () => {
   }
     <StyledCardFooter>
     <FlexBox>
-        <Button linkTo="/explore/glossary" isRounded={false} type="primary" name="Previouse" />
-        <Button linkTo="/explore/crowdfunding-platforms" isRounded={false} type="secondary" name="Next" />
+        <Button linkTo="/explore/glossary" isRounded={false} styleType="primary" name="Previouse" />
+        <Button linkTo="/explore/crowdfunding-platforms" isRounded={false} styleType="secondary" name="Next" />
     </FlexBox>
     </StyledCardFooter>
     <FooterNavigation />
