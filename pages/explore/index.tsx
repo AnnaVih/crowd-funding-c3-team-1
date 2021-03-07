@@ -9,7 +9,6 @@ export const dummyData = [
     id: "crowdfunding-platforms",
     img: 'images/crowdfunding.jpg',
     title: "Crowdfunding",
-    description: "Crowdfunding platforms description test",
     days: 20,
     total: 600,
     leftToInvest: 100,
@@ -19,18 +18,17 @@ export const dummyData = [
   {
     id: "obtaining-financing",
     img: 'images/finance.jpg',
-    description: "Obtaining Financing description test",
     days: 11,
     total: 600,
     leftToInvest: 100,
-    title: "IT",
-    type: "Crowdfunding",
-    isFavorite: false
+    title: "Money na karmane",
+    type: "Financing",
+    isFavorite: true
   },
   {
     id: "obtaining-financing-two",
-    img: 'images/test.jpeg',
-    days: 16,
+    img: 'images/designer.jpg',
+    days: 10,
     total: 800,
     leftToInvest: 200,
     title: 'Financing',
@@ -40,7 +38,7 @@ export const dummyData = [
   {
     id: "glossary",
     img: 'images/glossary.jpg',
-    title: 'Glossary',
+    title: 'Local newspaper',
     days: 4,
     total: 1000,
     leftToInvest: 500,

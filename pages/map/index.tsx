@@ -4,7 +4,7 @@ import { ImageWrapper, MapImage } from "../../styles/styled-components"
 const Map = () => (
   <>
     <ImageWrapper>
-      <MapImage src="/images/map.png" alt="map"/>
+      <MapImage src="/images/map_375_812.jpg" alt="map"/>
     </ImageWrapper>
     <FooterNavigation />
   </>
