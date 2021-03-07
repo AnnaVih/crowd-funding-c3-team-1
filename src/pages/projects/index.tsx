@@ -1,4 +1,4 @@
-import { FooterNavigation } from "../../components/ui/molecules/footer-navigation"
+import { FooterNavigation } from "../../ui/molecules/footer-navigation"
 
 const Projects = () => (
   <>

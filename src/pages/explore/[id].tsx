@@ -1,8 +1,8 @@
 import { useRouter } from "next/router"
-import { FooterNavigation } from '../../components/ui/molecules/footer-navigation'
+import { FooterNavigation } from '../../ui/molecules/footer-navigation'
 import { StyledDetails } from "../../styles/styled-components"
-import { Button } from "../../components/ui/atoms/button"
-import { FlexBox, StyledCardFooter } from '../../components/ui/molecules/card/styled-components'
+import { Button } from "../../ui/atoms/button"
+import { FlexBox, StyledCardFooter } from '../../ui/molecules/card/styled-components'
 
 export const dummyData = [
   {

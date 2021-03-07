@@ -1,9 +1,7 @@
-import { Card } from "../../components/ui/molecules/card"
-import { FooterNavigation } from "../../components/ui/molecules/footer-navigation"
-import { Person } from "../../components/ui/molecules/person"
+import { FooterNavigation } from "../../ui/molecules/footer-navigation"
+import { Person } from "../../ui/molecules/person"
 import { StyledExploreList, FlexBox } from "../../styles/styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShareAlt } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const dummyData = [

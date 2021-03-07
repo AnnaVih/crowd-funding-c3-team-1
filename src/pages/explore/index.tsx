@@ -1,8 +1,8 @@
 import React from 'react'
-import { Card } from '../../components/ui/molecules/card'
+import { Card } from '../../ui/molecules/card'
 import { StyledExploreList } from "../../styles/styled-components"
-import { FooterNavigation } from '../../components/ui/molecules/footer-navigation'
-import { FilterListNav } from '../../components/ui/molecules/filter-list-nav'
+import { FooterNavigation } from '../../ui/molecules/footer-navigation'
+import { FilterListNav } from '../../ui/molecules/filter-list-nav'
 
 export const dummyData = [
   {

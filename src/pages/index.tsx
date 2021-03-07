@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../components/ui/atoms/button'
-import { Logo } from '../components/ui/atoms/logo'
+import { Button } from '../ui/atoms/button'
+import { Logo } from '../ui/atoms/logo'
 import { Centered, FlexBox } from '../styles/styled-components'
 
 const Home =() => {
