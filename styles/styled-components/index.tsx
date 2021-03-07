@@ -28,12 +28,17 @@ export const StyledDetails = styled.div`
   }
 `
 
-export const MapImageWrapper = styled.div`
+export const ImageWrapper = styled.div`
   height: 100vh;
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+
+export const MapImage = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
 export const StyledExploreList = styled.div`
@@ -42,3 +47,11 @@ export const StyledExploreList = styled.div`
   justify-content: center;
   margin-bottom: 100px;
 `
+
+export const SettingsImageWrapper = styled.img`
+  max-width: 300px;
+  height: 300px;
+`
+
+
+

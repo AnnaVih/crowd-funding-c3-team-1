@@ -1,11 +1,11 @@
 import { FooterNavigation } from "../../components/ui/molecules/footer-navigation"
-import { MapImageWrapper } from "../../styles/styled-components"
+import { ImageWrapper, MapImage } from "../../styles/styled-components"
 
 const Map = () => (
   <>
-    <MapImageWrapper>
-      <img src="/images/map.png" alt="map"/>
-    </MapImageWrapper>
+    <ImageWrapper>
+      <MapImage src="/images/map.png" alt="map"/>
+    </ImageWrapper>
     <FooterNavigation />
   </>
 )
