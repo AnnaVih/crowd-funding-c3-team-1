@@ -14,7 +14,9 @@ export const Card = ({
   leftToInvest,
   imagePath,
   linkTo,
-  isFavourite
+  isFavourite,
+  onClick,
+  id
 }: {
   title: string
   type: string
@@ -24,12 +26,15 @@ export const Card = ({
   imagePath: string
   linkTo: string
   isFavourite: boolean
+  onClick: (projectId) => void
+  id: string
 }) => {
   const [investType, setInvestType] = React.useState(null)
   
   const onInvestHandler = (type: string) => {
     setInvestType(type)
   }
+
   
   return (
     <StyledCard>
@@ -50,7 +55,7 @@ export const Card = ({
           <span>{type}</span>
           <FlexBox>
             <div><FontAwesomeIcon icon={faShareAlt} /> &nbsp; &nbsp; &nbsp;</div>
-            <StyledHeart isFavourite={isFavourite}><FontAwesomeIcon icon={faHeart} /></StyledHeart>
+            <StyledHeart onClick={() => onClick(id)} isFavourite={isFavourite}><FontAwesomeIcon icon={faHeart} /></StyledHeart>
           </FlexBox>
         </FlexBox>
       </StyledCardBody>

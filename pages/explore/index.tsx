@@ -70,13 +70,26 @@ const Explore = () => {
     }
     setListType(filterBy)
   }
+
+  const onLikeClcickHandler = (projectID) => {
+    const updatedListWithFav = list.map(item => {
+      if(item.id === projectID) {
+        return {
+          ...item, 
+          isFavourite: !item.isFavourite
+        }
+      }
+      return item
+    })
+    setList(updatedListWithFav)
+  }
   
   return (
     <>
       <FilterListNav listType={listType} onClick={onClickHandler}/>
       <StyledExploreList>
-        {list.map(({id, title, days, total, type, img, leftToInvest, isFavourite}) => {
-          return <Card isFavourite={isFavourite} days={days} total={total} type={type} leftToInvest={leftToInvest} linkTo={`/explore/${id}`} title={title} key={id} imagePath={img}/>
+        {list.map(({title, days, total, type, img, leftToInvest, isFavourite, id}) => {
+          return <Card onClick={onLikeClcickHandler} id={id} isFavourite={isFavourite} days={days} total={total} type={type} leftToInvest={leftToInvest} linkTo={`/explore/${id}`} title={title} key={id} imagePath={img}/>
         })}
       </StyledExploreList>
       <FooterNavigation />
