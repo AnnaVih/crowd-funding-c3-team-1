@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const StyledCard = styled.div`
   width: 374px;
   color: #5a5755;
@@ -40,5 +40,9 @@ export const FlexBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`
+
+export const  StyledHeart = styled.div<{isFavourite: boolean}>`
+  color:  ${({isFavourite}) => isFavourite ? "#800080" : "inherit"};
 `
 

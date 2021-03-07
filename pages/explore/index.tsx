@@ -13,7 +13,7 @@ export const dummyData = [
     total: 600,
     leftToInvest: 100,
     type: "Crowdfunding",
-    isFavorite: false
+    isFavourite: false
   },
   {
     id: "obtaining-financing",
@@ -23,7 +23,7 @@ export const dummyData = [
     leftToInvest: 100,
     title: "Money na karmane",
     type: "Financing",
-    isFavorite: true
+    isFavourite: true
   },
   {
     id: "obtaining-financing-two",
@@ -33,7 +33,7 @@ export const dummyData = [
     leftToInvest: 200,
     title: 'Financing',
     type: "Financing",
-    isFavorite: true
+    isFavourite: true
   },
   {
     id: "glossary",
@@ -43,7 +43,7 @@ export const dummyData = [
     total: 1000,
     leftToInvest: 500,
     type: "Media",
-    isFavorite: false
+    isFavourite: false
   },
   {
     id:"networking",
@@ -53,7 +53,7 @@ export const dummyData = [
     total: 22000,
     leftToInvest: 1100,
     type: "Networking",
-    isFavorite: true
+    isFavourite: true
   }
 ]
 
@@ -65,7 +65,7 @@ const Explore = () => {
     if(filterBy === "all"){
       setList(dummyData)
     } else {
-      const filteredList = list.filter(item => item.isFavorite)
+      const filteredList = list.filter(item => item.isFavourite)
       setList(filteredList)
     }
     setListType(filterBy)
@@ -75,8 +75,8 @@ const Explore = () => {
     <>
       <FilterListNav listType={listType} onClick={onClickHandler}/>
       <StyledExploreList>
-        {list.map(({id, title, days, total, type, img, leftToInvest}) => {
-          return <Card days={days} total={total} type={type} leftToInvest={leftToInvest} linkTo={`/explore/${id}`} title={title} key={id} imagePath={img}/>
+        {list.map(({id, title, days, total, type, img, leftToInvest, isFavourite}) => {
+          return <Card isFavourite={isFavourite} days={days} total={total} type={type} leftToInvest={leftToInvest} linkTo={`/explore/${id}`} title={title} key={id} imagePath={img}/>
         })}
       </StyledExploreList>
       <FooterNavigation />

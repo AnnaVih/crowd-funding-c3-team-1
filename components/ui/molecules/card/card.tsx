@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 import { Button } from "../../atoms/button"
-import { StyledCardHeader, StyledCard, StyledCardBody, StyledCardFooter, CardFooterTitle, FlexBox, StyledCardDays } from "./styled-components"
+import { StyledCardHeader, StyledCard, StyledCardBody, StyledCardFooter, CardFooterTitle, FlexBox, StyledCardDays, StyledHeart } from "./styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShareAlt } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
@@ -13,15 +13,17 @@ export const Card = ({
   total,
   leftToInvest,
   imagePath,
-  linkTo
+  linkTo,
+  isFavourite
 }: {
   title: string
-  type: string,
-  days: number,
-  total: number,
-  leftToInvest: number,
+  type: string
+  days: number
+  total: number
+  leftToInvest: number
   imagePath: string
   linkTo: string
+  isFavourite: boolean
 }) => {
   const [investType, setInvestType] = React.useState(null)
   
@@ -48,7 +50,7 @@ export const Card = ({
           <span>{type}</span>
           <FlexBox>
             <div><FontAwesomeIcon icon={faShareAlt} /> &nbsp; &nbsp; &nbsp;</div>
-            <div><FontAwesomeIcon icon={faHeart} /></div>
+            <StyledHeart isFavourite={isFavourite}><FontAwesomeIcon icon={faHeart} /></StyledHeart>
           </FlexBox>
         </FlexBox>
       </StyledCardBody>
