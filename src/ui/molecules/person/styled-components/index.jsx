@@ -6,14 +6,15 @@ export const StyledPerson = styled.div`
   justify-content: center;
   width: 374px;
   box-shadow: 1px 2px 2px #C7C4C2; 
-  margin: 20px;
+  border: 1px solid #C7C4C2;
+  margin: 5px;
   background: #fff;
-  padding: 10px;
+  padding: 5px;
 `
 
 export const StyledImg = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 2px solid #800080;
 `
