@@ -29,7 +29,9 @@ export const StyledCardFooter = styled.div`
 `
 
 export const CardFooterTitle = styled.div`
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
 `
 
 export const StyledCardDays = styled.div`
@@ -40,6 +42,19 @@ export const FlexBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  progress {
+    width: 100%;
+    height:40px;
+  }
+
+  .progress-title {
+    font-size: 12px;
+  }
+
+  .progress-amount {
+    font-weight: 500;
+  }
 `
 
 export const  StyledHeart = styled.div<{isFavourite: boolean}>`
