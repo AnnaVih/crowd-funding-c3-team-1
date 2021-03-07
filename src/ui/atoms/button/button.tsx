@@ -6,7 +6,7 @@ export const Button = ({
   name,
   linkTo,
   styleType,
-  isRounded = true,
+  rounded = "none",
   className,
   size,
   onClick,
@@ -16,12 +16,12 @@ export const Button = ({
   onClick?: () => void
   linkTo?: string
   styleType: ButtonType
-  isRounded?: boolean
+  rounded?: "left" | "right" | "none" | "all"
   className?: string
   size?: string
   type?:  "button" | "submit" | "reset"
 }) => ( 
-  <StyledButton size={size} styleType={styleType} isRounded={isRounded} className={className} name={name}>{
+  <StyledButton size={size} styleType={styleType} rounded={rounded} className={className} name={name}>{
     linkTo ? <Link href={linkTo}>{name}</Link>
     : <button type={type} onClick={onClick}>{name}</button> }
   </StyledButton>

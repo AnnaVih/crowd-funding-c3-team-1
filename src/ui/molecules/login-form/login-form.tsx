@@ -17,7 +17,7 @@ export const LoginForm = ({isAuth, setIsAuth}) => {
         <Input isRequired={true} type="email" placeholder="Type your email" name="email" label="Email"/>
         <Input isRequired={true} type="password" placeholder="Type your password" name="password" label="Password"/>
       </InputsWrapper>
-      <Button type="submit" onClick={() => null} styleType="secondary"  name="Login"/>
+      <Button type="submit" onClick={() => null} styleType="secondary" rounded="all" name="Login"/>
     </StyledFrom>
   )
 }

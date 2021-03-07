@@ -13,10 +13,10 @@ const Home =({
       <Logo />
       <Centered>
         {!isAuth && <>
-          <Button  styleType="primary" linkTo="/auth/login" name="Login"/>
-          <Button  styleType="primary" linkTo="/auth/signup" name="Register"/>
+          <Button  styleType="primary" rounded="all" linkTo="/auth/login" name="Login"/>
+          <Button  styleType="primary" rounded="all" linkTo="/auth/signup" name="Register"/>
         </>}
-        <Button  styleType="secondary" linkTo="/explore" name="Explore"/>
+        <Button  styleType="secondary" rounded="all" linkTo="/explore" name="Explore"/>
       </Centered>
     </FlexBox>
   )

@@ -21,7 +21,7 @@ export const SignUpForm = ({
         <Input isRequired={true} type="email" name="email" placeholder="Type your email" label="Email"/>
         <Input isRequired={true} type="text" name="companyName" placeholder="Type your company name" label="Company name"/>
       </InputsWrapper>
-      <Button onClick={() => null} type="submit" styleType="secondary"  name="Sign Up"/>
+      <Button onClick={() => null} type="submit" styleType="secondary"  rounded="all" name="Sign Up"/>
     </StyledFrom>
   )
 }

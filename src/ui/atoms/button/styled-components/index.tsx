@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { ButtonType } from "../types"
 
-export const StyledButton = styled.div<{styleType: ButtonType, isRounded: boolean, size: string, name: string}>`
+export const StyledButton = styled.div<{styleType: ButtonType, rounded: string, size: string, name: string}>`
   width: ${({size}) => size === "sm" ? "200px" : "300px"};
   height: ${({size}) => size === "sm" ? "50px" : "70px"};
   margin: ${({size}) => size === "sm" ? "10px 0" : "25px 0"};
@@ -12,11 +12,11 @@ export const StyledButton = styled.div<{styleType: ButtonType, isRounded: boolea
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius:  ${({isRounded}) => isRounded ? "40px" : "none"};
-  border-top-left-radius: ${({name}) => name === "Reward" ? "25px" : "none" };
-  border-bottom-left-radius: ${({name}) => name === "Reward" ? "25px" : "none" };
-  border-top-right-radius: ${({name}) => name === "Equity" ? "25px" : "none" };
-  border-bottom-right-radius: ${({name}) => name === "Equity" ? "25px" : "none" };
+  border-radius:  ${({rounded}) => rounded === "all" ? "40px" : "none"};
+  border-top-left-radius: ${({rounded}) => rounded === "left" ? "25px" : "none" };
+  border-bottom-left-radius: ${({rounded}) => rounded === "left" ? "25px" : "none" };
+  border-top-right-radius: ${({rounded}) => rounded === "right" ? "25px" : "none" };
+  border-bottom-right-radius: ${({rounded}) => rounded === "right" ? "25px" : "none" };
   border: ${({styleType}) => styleType === "primary" ? "1px solid #800080" : "none"};
   cursor: pointer;
 
