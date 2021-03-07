@@ -6,26 +6,26 @@ import { FooterNavigation } from '../../components/ui/molecules/footer-navigatio
 export const dummyData = [
   {
     id: "crowdfunding-platforms",
-    img: 'images/test.jpeg',
+    img: 'images/crowdfunding.jpg',
     title: "Crowdfunding Platforms",
     description: "Crowdfunding platforms description test"
   },
   {
     id: "obtaining-financing",
-    img: 'images/test.jpeg',
+    img: 'images/finance.jpg',
     title: 'Obtaining Financing',
     description: "Obtaining Financing description test"
 
   },
   {
     id: "glossary",
-    img: 'images/test.jpeg',
+    img: 'images/glossary.jpg',
     title: 'Glossary',
     description: "Glossary description test"
   },
   {
     id:"networking",
-    img: 'images/test.jpeg',
+    img: 'images/networking.jpg',
     title: 'Networking',
     description: "Networking description test"
   }
