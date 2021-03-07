@@ -21,12 +21,12 @@ export const dummyData = [
     days: 20,
     total: 600,
     leftToInvest: 100,
-    title: "IT",
-    type: "Crowdfunding"
+    title: "Money na karmane",
+    type: "Financing"
   },
   {
     id: "obtaining-financing-two",
-    img: 'images/test.jpeg',
+    img: 'images/designer.jpg',
     days: 10,
     total: 800,
     leftToInvest: 200,
@@ -36,7 +36,7 @@ export const dummyData = [
   {
     id: "glossary",
     img: 'images/glossary.jpg',
-    title: 'Glossary',
+    title: 'Local newspaper',
     days: 4,
     total: 1000,
     leftToInvest: 500,
