@@ -45,7 +45,7 @@ export const StyledExploreList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 100px;
+  margin: 60px 0 100px;
 `
 
 export const SettingsImageWrapper = styled.img`
