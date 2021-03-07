@@ -44,13 +44,19 @@ export const Card = ({
       <StyledCardBody>
         <FlexBox>
           <Link href={linkTo}><a><h2>{title}</h2></a></Link>
-          <StyledCardDays> {days} days to go</StyledCardDays>
+          <StyledCardDays> {days} days left</StyledCardDays>
         </FlexBox>
         <FlexBox>
-          <progress value={total - leftToInvest} max={total}> текст</progress>
-          <h5>Remaining &pound;{leftToInvest}</h5>
+          <span className="progress-title">  
+            <span className="progress-amount">&pound;{total - leftToInvest}</span> raised of <span className="progress-amount">&pound;{total}</span>
+          </span>
+          <span className="progress-title">Remaining: &pound;{leftToInvest}</span>
         </FlexBox>
-    
+        <FlexBox>
+          <progress value={total - leftToInvest} max={total} > текст</progress>
+        </FlexBox>
+
+        <br/>
         <FlexBox>
           <span>{type}</span>
           <FlexBox>
@@ -58,6 +64,7 @@ export const Card = ({
             <StyledHeart onClick={() => onClick(id)} isFavourite={isFavourite}><FontAwesomeIcon icon={faHeart} /></StyledHeart>
           </FlexBox>
         </FlexBox>
+        <br/>
       </StyledCardBody>
       <StyledCardFooter>
         <CardFooterTitle>Invest on this project</CardFooterTitle>
