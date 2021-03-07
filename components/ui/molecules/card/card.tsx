@@ -2,6 +2,9 @@ import React from 'react'
 import Link from "next/link"
 import { Button } from "../../atoms/button"
 import { StyledCardHeader, StyledCard, StyledCardBody, StyledCardFooter, CardFooterTitle, FlexBox, StyledCardDays } from "./styled-components"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShareAlt } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export const Card = ({
   title,
@@ -37,21 +40,22 @@ export const Card = ({
           <StyledCardDays> {days} days to go</StyledCardDays>
         </FlexBox>
         <FlexBox>
-          <h5>{total}</h5>
-          <h5>{leftToInvest}</h5>
+          <progress value={total - leftToInvest} max={total}> текст</progress>
+          <h5>Remaining &pound;{leftToInvest}</h5>
         </FlexBox>
+    
         <FlexBox>
-          <span>#{type}</span>
+          <span>{type}</span>
           <FlexBox>
-            <div>S</div>
-            <div>l</div>
+            <div><FontAwesomeIcon icon={faShareAlt} /> &nbsp; &nbsp; &nbsp;</div>
+            <div><FontAwesomeIcon icon={faHeart} /></div>
           </FlexBox>
         </FlexBox>
       </StyledCardBody>
       <StyledCardFooter>
         <CardFooterTitle>Invest on this project</CardFooterTitle>
         <FlexBox>
-          <Button onClick={() => onInvestHandler("reward")} size="sm" className={investType === "reward" ? "active": ""} isRounded={false} name="Reward" type="primary"/>
+          <Button onClick={() => onInvestHandler("reward")} size="sm" className={investType === "reward" ? "active" : ""} isRounded={false} name="Reward" type="secondary"/>
           <Button onClick={() => onInvestHandler("equity")}  size="sm" className={investType === "equity" ? "active": ""} isRounded={false} name="Equity" type="primary"/>
         </FlexBox>
       </StyledCardFooter>
